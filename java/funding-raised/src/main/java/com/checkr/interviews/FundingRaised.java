@@ -90,33 +90,25 @@ public class FundingRaised {
             if(options.containsKey("company_name")) {
                 if(csvData.get(i)[1].equals(options.get("company_name"))) {
                     mapped = mapPut(mapped, csvData, i);
-                } else {
-                    continue;
-                }
+                } 
             }
 
             if(options.containsKey("city")) {
                 if(csvData.get(i)[4].equals(options.get("city"))) {
                     mapped = mapPut(mapped, csvData, i);
-                } else {
-                    continue;
-                }
+                } 
             }
 
             if(options.containsKey("state")) {
                 if(csvData.get(i)[5].equals(options.get("state"))) {
                     mapped = mapPut(mapped, csvData, i);
-                } else {
-                    continue;
-                }
+                } 
             }
 
             if(options.containsKey("round")) {
                 if(csvData.get(i)[9].equals(options.get("round"))) {
                     mapped = mapPut(mapped, csvData, i);
-                } else {
-                    continue;
-                }
+                } 
             }
 
             return mapped;
